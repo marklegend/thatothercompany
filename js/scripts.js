@@ -1,4 +1,4 @@
-var DEOTHEMES = DEOTHEMES || {};
+var STARTAPP = STARTAPP || {};
 
 (function($){
 	"use strict";
@@ -19,22 +19,22 @@ var DEOTHEMES = DEOTHEMES || {};
 		}
 	})();
 
-	DEOTHEMES.initialize = {
+	STARTAPP.initialize = {
 
 		init: function() {
-			DEOTHEMES.initialize.scrollTo();
-			DEOTHEMES.initialize.onepageNav();
-			DEOTHEMES.initialize.scrollToTop();
-			DEOTHEMES.initialize.slickSlider();
-			DEOTHEMES.initialize.isotope();
-			DEOTHEMES.initialize.mobileNavigation();
-			DEOTHEMES.initialize.serviceLinks();
-			DEOTHEMES.initialize.stickyFooter();
-			DEOTHEMES.initialize.animateOnScroll();		
-			DEOTHEMES.initialize.animeJS();		
-			DEOTHEMES.initialize.contactForm();
-			DEOTHEMES.initialize.detectMobile();
-			DEOTHEMES.initialize.detectIE();
+			STARTAPP.initialize.scrollTo();
+			STARTAPP.initialize.onepageNav();
+			STARTAPP.initialize.scrollToTop();
+			STARTAPP.initialize.slickSlider();
+			STARTAPP.initialize.isotope();
+			STARTAPP.initialize.mobileNavigation();
+			STARTAPP.initialize.serviceLinks();
+			STARTAPP.initialize.stickyFooter();
+			STARTAPP.initialize.animateOnScroll();		
+			STARTAPP.initialize.animeJS();		
+			STARTAPP.initialize.contactForm();
+			STARTAPP.initialize.detectMobile();
+			STARTAPP.initialize.detectIE();
 		},
 
 		preloader: function() {
@@ -418,38 +418,38 @@ var DEOTHEMES = DEOTHEMES || {};
 		}
 	};
 
-	DEOTHEMES.documentOnReady = {
+	STARTAPP.documentOnReady = {
 
 		init: function() {
-			DEOTHEMES.initialize.init();
+			STARTAPP.initialize.init();
 		}
 
 	};
 
-	DEOTHEMES.windowOnLoad = {
+	STARTAPP.windowOnLoad = {
 
 		init: function() {			
-			DEOTHEMES.initialize.preloader();		
-			DEOTHEMES.initialize.triggerResize();
-			DEOTHEMES.initialize.isotope();
-			DEOTHEMES.initialize.cookies();
+			STARTAPP.initialize.preloader();		
+			STARTAPP.initialize.triggerResize();
+			STARTAPP.initialize.isotope();
+			STARTAPP.initialize.cookies();
 		}
 
 	};
 
-	DEOTHEMES.windowOnResize = {
+	STARTAPP.windowOnResize = {
 
 		init: function() {
-			DEOTHEMES.initialize.stickyFooter();
+			STARTAPP.initialize.stickyFooter();
 		}
 
 	}
 
-	DEOTHEMES.windowOnScroll = {
+	STARTAPP.windowOnScroll = {
 
 		init: function() {
-			DEOTHEMES.initialize.scrollToTopScroll();
-			DEOTHEMES.initialize.stickyNavbar();
+			STARTAPP.initialize.scrollToTopScroll();
+			STARTAPP.initialize.stickyNavbar();
 		}
 
 	}
@@ -462,9 +462,9 @@ var DEOTHEMES = DEOTHEMES || {};
 			mobileBreakpoint = 1024,
 			minWidth;
 
-	$(document).ready(DEOTHEMES.documentOnReady.init);
-	document.addEventListener('DOMContentLoaded', DEOTHEMES.windowOnLoad.init, false);
-	$window.on('resize', DEOTHEMES.windowOnResize.init);
-	$window.on('scroll', DEOTHEMES.windowOnScroll.init);
+	$(document).ready(STARTAPP.documentOnReady.init);
+	document.addEventListener('DOMContentLoaded', STARTAPP.windowOnLoad.init, false);
+	$window.on('resize', STARTAPP.windowOnResize.init);
+	$window.on('scroll', STARTAPP.windowOnScroll.init);
 
 })(jQuery);
